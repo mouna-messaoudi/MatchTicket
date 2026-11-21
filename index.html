@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation Ticket CAN 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CAN 2025</h1>
+        <p>Réservez vos tickets facilement</p>
+    </header>
+
+    <main class="container">
+
+        <section class="reservation">
+            <h2>Réservation de Tickets</h2>
+
+            <label>Nom et Prénom :</label>
+            <input type="text" id="nom" placeholder="Votre nom complet">
+
+            <label>Choisissez un Stade :</label>
+            <select id="stade" onchange="calculerTotal()"></select>
+
+            <label>Date du Match :</label>
+            <input type="date" id="date">
+
+            <label>Nombre de Tickets :</label>
+            <input type="number" id="nbTickets"
+                   onchange="calculerTotal()"
+                   onkeyup="calculerTotal()">
+
+            <div class="total">
+                <label id="totalLabel">Total à payer : 0 MAD</label>
+            </div>
+
+            <button onclick="Reserver()">Réserver</button>
+        </section>
+
+        <section class="reservations">
+            <h2>Liste des Réservations</h2>
+
+            <div class="table-container">
+                <table id="tableReservation">
+                    <tr>
+                        <th>Nom et Prénom</th>
+                        <th>Stade</th>
+                        <th>Date</th>
+                        <th>Tickets</th>
+                        <th>Total</th>
+                        <th>Actions</th>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - CAN Ticket Reservation</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

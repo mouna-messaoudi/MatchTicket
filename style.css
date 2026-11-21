@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f6;
+    color: #263238;
+}
+
+/* Header */
+
+header {
+    background: #102c3c;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #cbd5d9;
+}
+
+/* Main */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+/* Sections */
+
+.reservation,
+.reservations {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    color: #102c3c;
+    margin-bottom: 25px;
+}
+
+/* Form */
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #d5dddd;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #159b70;
+}
+
+/* Total */
+
+.total {
+    background: #e9f7f1;
+    color: #087b55;
+    padding: 15px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.total label {
+    margin: 0;
+}
+
+/* Buttons */
+
+button {
+    background: #159b70;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #107b59;
+}
+
+/* Table */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #e1e7e5;
+}
+
+th {
+    background: #102c3c;
+    color: white;
+}
+
+td button {
+    margin: 3px;
+    padding: 8px 12px;
+}
+
+/* Footer */
+
+footer {
+    background: #102c3c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .reservation,
+    .reservations {
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    td button {
+        width: auto;
+    }
+}
